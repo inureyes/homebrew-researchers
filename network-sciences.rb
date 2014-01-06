@@ -11,7 +11,7 @@ class NetworkSciences < Formula
   depends_on 'gnuplot' => :recommended
 
   def install
-  	system "pip install numpy scipy matplotlib pyzmq Jinja2 tornado networkx wsgiref MarkupSafe ipython" if build.with? 'python'
+  	system "pip", "install", "numpy", "scipy", "matplotlib", "pyzmq", "Jinja2", "tornado", "networkx", "wsgiref", "MarkupSafe", "ipython" if build.with? 'python'
   end
 
   def caveats
